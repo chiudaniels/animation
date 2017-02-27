@@ -2,14 +2,19 @@
 
 <html>
   <head>
+	<style>
+		#area {border:1px solid black}
+	</style>
   </head>
 
   <body>
-    <button id="dvd" onclick="clicked()">dvd</button>
-    <button id="grow" onclick=""> grow </button>
-    <button id="stop" onclick=""> stop </button>
     <canvas id="area" width="500" height="500" style="border:10px soild black;">
     </canvas>
+	<br>
+	<button id="dvd" onclick="dvdAnimate()">dvd</button>
+    <button id="grow" onclick="growAnimate()"> grow </button>
+    <button id="stop" onclick="stop()"> stop </button>
+	<button id="clear" onclick="clearCanv()"> clear </button>
     <script type="text/javascript" src="canvas.js"> </script>
   </body>
 </html>
